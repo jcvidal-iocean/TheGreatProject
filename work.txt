@@ -1,0 +1,7 @@
+Ici, git status nous informe que notre projet possède deux fichiers qui ne sont pas sous suivi de version (“untracked”) et qui sont les fichiers “README.txt” et “ficiher1.txt”. Il nous dit aussi qu’aucun fichier n’a été validé (“commit”) en base pour le moment ni ajouté pour validation. La commande git statuts nous informe également sur la branche sur laquelle on se trouve (“master” ici). Nous reparlerons des branches plus tard.
+
+L’étape suivante va donc ici être d’indexer nos fichiers afin qu’ils puissent ensuite être validés, c’est-à-dire ajoutés en base et qu’on puisse ainsi avoir un premier historique de version.
+
+Pour indexer des fichiers, on utilise la commande git add. On peut lui passer un nom de fichier pour indexer le fichier en question, le nom d’un répertoire pour indexer tous les fichiers du répertoire d’un coup ou encore un “fileglob” pour ajouter tous les fichiers correspondant au schéma fourni.
+
+Les fileglobs utilisent les extension de chemin de fichier. Grosso-modo, cela signifie que certains caractères comme * et ? vont posséder une signification spéciale et nous permettre de créer des schémas de correspondances. Le caractère * par exemple correspond à n’importe quel caractère. Lorsque j’écris git add *.txt, je demande finalement à Git d’ajouter à l’index tous les fichiers du projet qui possèdent une extension .txt, quelque soit leur nom. 
